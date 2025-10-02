@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VB Materiais de Construção - Do Alicerce ao Acabamento</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-gray-50">
+  
+     <header class="bg-white shadow-md fixed w-full top-0 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="#"><img src="/Logotipo sem fundo.png" alt="Logo VB Construção" class="h-10"></a>
+        <div class="hidden lg:flex items-center space-x-6">
+            <a href="#inicio" class="text-gray-700 hover:text-blue-800 font-medium transition duration-300">Início</a>
+            <a href="#categorias" class="text-gray-700 hover:text-blue-800 font-medium transition duration-300">Categorias</a>
+            <a href="#diferenciais" class="text-gray-700 hover:text-blue-800 font-medium transition duration-300">Diferenciais</a>
+            <a href="#contato" class="text-gray-700 hover:text-blue-800 font-medium transition duration-300">Contato</a>
+            
+            <a href="dashboard.html" class="text-blue-800 hover:text-amber-500 font-bold transition duration-300">Dashboard</a>
+            </div>
+        <a href="#contato" class="hidden lg:block bg-amber-400 text-blue-900 font-bold py-2 px-5 rounded-lg shadow-md hover:bg-amber-500 transition duration-300">
+            Fale Conosco
+        </a>
+        
+        
+            <button id="mobile-menu-button" class="lg:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+    
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t">
+            <a href="#inicio" class="block text-gray-700 py-2 px-6 hover:bg-gray-100">Início</a>
+            <a href="#categorias" class="block text-gray-700 py-2 px-6 hover:bg-gray-100">Categorias</a>
+            <a href="#diferenciais" class="block text-gray-700 py-2 px-6 hover:bg-gray-100">Diferenciais</a>
+            <a href="#depoimentos" class="block text-gray-700 py-2 px-6 hover:bg-gray-100">Depoimentos</a>
+            <a href="#contato" class="block text-gray-700 py-2 px-6 hover:bg-gray-100">Contato</a>
+        </div>
+    </header>
+
+    
+   <main id="inicio" class="relative">
+            <div class="swiper hero-swiper">
+                <div class="swiper-wrapper">
+              
+                    <div class="swiper-slide" style="background-image: url('/20240714_10390foto3.jpg');">
+                        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+                        <div class="container mx-auto px-6 relative z-10 flex items-center h-full">
+                              <div class="text-center mx-auto text-white max-w-3xl">
+                                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+                                    VB MATERIAIS DE CONSTRUÇÃO
+                                    <span class="block text-amber-400 text-3xl md:text-4xl font-semibold mt-2">A mais de 20 anos construindo com VOCÊ.</span>
+                                </h1>
+                                <br>
+                                <a href="#categorias" class="bg-amber-400 text-blue-900 font-bold py-4 px-8 rounded-lg shadow-xl hover:bg-amber-500 transition duration-300 transform hover:scale-105 text-lg">
+                                    Sobre nós
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="swiper-slide" style="background-image: url('/VotorantimCimentosCampanha1-002-scaled\ copiar.webp');">
+                        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+                        <div class="container mx-auto px-6 relative z-10 flex items-center h-full">
+                            <div class="text-center mx-auto text-white max-w-3xl">
+                                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+                                    Cimento Poty
+                                    <span class="block text-amber-400 text-3xl md:text-4xl font-semibold mt-2">Resistência e Versatilidade para sua Obra</span>
+                                </h1>
+                                <p class="text-lg md:text-xl font-light mb-6 leading-relaxed">
+                                    Desenvolvido pela Votorantim Cimentos para garantir a máxima segurança em todas as etapas da sua construção.
+                                </p>
+                                <div class="inline-block bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-8">
+                                    <p class="text-xl font-semibold mb-2">Perfeito para:</p>
+                                    <ul class="text-left list-inside list-disc grid grid-cols-2 gap-x-6 text-lg">
+                                        <li>Reboco</li>
+                                        <li>Lajes</li>
+                                        <li>Contrapiso</li>
+                                        <li>Concreto</li>
+                                    </ul>
+                                </div>
+                                <br>
+                                <a href="#pagina-fundacao" class="category-link bg-amber-400 text-blue-900 font-bold py-4 px-8 rounded-lg shadow-xl hover:bg-amber-500 transition duration-300 transform hover:scale-105 text-lg">
+                                    Ver Opções de Cimento
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                
+                    <div class="swiper-slide" style="background-image: url('/75064834_1967731053329575_8092002897182588928_n\ copiar.jpg');">
+                        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+                        <div class="container mx-auto px-6 relative z-10 flex items-center h-full">
+                            <div class="text-center mx-auto text-white max-w-3xl">
+                                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+                                    Fame
+                                    <span class="block text-amber-400 text-3xl md:text-4xl font-semibold mt-2">Tudo que se espera em qualidade</span>
+                                </h1>
+                                <p class="text-lg md:text-xl font-light mb-6 leading-relaxed">
+                                    Segurança, confiabilidade e inovação: a FAME oferece uma linha completa de materiais elétricos e hidraulicos com alto padrão de qualidade.
+                                </p>
+                                <div class="inline-block bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-8">
+                                    <p class="text-xl font-semibold mb-2">Perfeito para:</p>
+                                    <ul class="text-left list-inside list-disc grid grid-cols-2 gap-x-6 text-lg">
+                                        <li>Materiais Eletricos</li>
+                                        <li>Chuveiros</li>
+                                        <li>Torneiras</li>
+                                        <li>Eletroportáteis</li>
+                                    </ul>
+                                </div>
+                                <br>
+                                <a href="#pagina-fundacao" class="category-link bg-amber-400 text-blue-900 font-bold py-4 px-8 rounded-lg shadow-xl hover:bg-amber-500 transition duration-300 transform hover:scale-105 text-lg">
+                                    Ver Opções de Materiais
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+             
+                <div class="swiper-pagination"></div>
+             
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </main>
+
+  
+    <section id="categorias" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-12">Nossos Produtos</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 md:gap-8">
+                
+                <div class="category-card bg-gray-50 p-6 rounded-xl shadow-lg text-center transition duration-300 hover:shadow-2xl hover:-translate-y-2 cursor-pointer">
+                    <div class="category-icon bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 transition duration-300">
+                     
+                        <svg class="w-10 h-10 text-blue-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">Fundação</h3>
+                </div>
+              
+                <div class="category-card bg-gray-50 p-6 rounded-xl shadow-lg text-center transition duration-300 hover:shadow-2xl hover:-translate-y-2 cursor-pointer">
+                    <div class="category-icon bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 transition duration-300">
+                        <svg class="w-10 h-10 text-blue-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">Acabamento</h3>
+                </div>
+     
+                <div class="category-card bg-gray-50 p-6 rounded-xl shadow-lg text-center transition duration-300 hover:shadow-2xl hover:-translate-y-2 cursor-pointer">
+                    <div class="category-icon bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 transition duration-300">
+                        <svg class="w-10 h-10 text-blue-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">Elétrica</h3>
+                </div>
+         
+                <div class="category-card bg-gray-50 p-6 rounded-xl shadow-lg text-center transition duration-300 hover:shadow-2xl hover:-translate-y-2 cursor-pointer">
+                    <div class="category-icon bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 transition duration-300">
+                        <svg class="w-10 h-10 text-blue-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">Hidráulica</h3>
+                </div>
+         
+                <div class="category-card bg-gray-50 p-6 rounded-xl shadow-lg text-center transition duration-300 hover:shadow-2xl hover:-translate-y-2 cursor-pointer">
+                    <div class="category-icon bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 transition duration-300">
+                        <svg class="w-10 h-10 text-blue-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.618 5.984A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">Limpeza</h3>
+                </div>
+        
+                <div class="category-card bg-gray-50 p-6 rounded-xl shadow-lg text-center transition duration-300 hover:shadow-2xl hover:-translate-y-2 cursor-pointer">
+                    <div class="category-icon bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 transition duration-300">
+                        <svg class="w-10 h-10 text-blue-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.121 15.536c-1.171 1.952-3.07 1.952-4.242 0-1.172-1.953-1.172-5.119 0-7.072 1.171-1.952 3.07-1.952 4.242 0M8.586 10.828a2 2 0 012.828 0M10 12.242a2 2 0 100-2.828 2 2 0 000 2.828zM3 10.364A9.952 9.952 0 0112 3c3.314 0 6.313 1.623 8 4.136-1.687 2.513-4.686 4.136-8 4.136a9.952 9.952 0 01-9-7.136z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">Jardinagem</h3>
+                </div>
+         
+                <div class="category-card bg-gray-50 p-6 rounded-xl shadow-lg text-center transition duration-300 hover:shadow-2xl hover:-translate-y-2 cursor-pointer">
+                    <div class="category-icon bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 transition duration-300">
+                        <svg class="w-10 h-10 text-blue-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">Pisos</h3>
+                </div>
+            
+                <div class="category-card bg-gray-50 p-6 rounded-xl shadow-lg text-center transition duration-300 hover:shadow-2xl hover:-translate-y-2 cursor-pointer">
+                    <div class="category-icon bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 transition duration-300">
+                        <svg class="w-10 h-10 text-blue-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">Vinílico</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="diferenciais" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-12">A Confiança que Sua Obra Precisa</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <div class="bg-amber-400 text-blue-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Atendimento Especializado</h3>
+                    <p class="text-gray-600">Nossa equipe está pronta para ajudar você a encontrar a melhor solução para sua obra ou reforma.</p>
+                </div>
+                <div class="p-6">
+                    <div class="bg-amber-400 text-blue-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.135 3.135 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.135 3.135 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.135-3.135 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.135-3.135z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Qualidade Garantida</h3>
+                    <p class="text-gray-600">Trabalhamos apenas com as melhores marcas do mercado para garantir a durabilidade da sua construção.</p>
+                </div>
+                <div class="p-6">
+                    <div class="bg-amber-400 text-blue-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10l2-2h8a1 1 0 001-1zM21 12h-6"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Entrega Rápida</h3>
+                    <p class="text-gray-600">Consulte nossas opções de frete e receba seus materiais diretamente na sua obra, sem complicações.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<hr>
+<br>
+     <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-4">O Que Nossos Clientes Dizem</h2>
+                <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Confira as avaliações de quem já construiu e reformou com a gente.</p>
+                
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-65b6d2ce-c7ce-446d-bc0f-064cba061a4d" data-elfsight-app-lazy></div>
+
+    <section id="contato" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-12">Faça um Orçamento ou Visite-nos</h2>
+            <div class="bg-gray-50 rounded-xl shadow-2xl p-8 md:p-12 grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-gray-700">
+                    <h3 class="text-2xl font-bold text-blue-900 mb-6">Informações de Contato</h3>
+                    <p class="mb-4 flex items-start">
+                        <svg class="w-6 h-6 mr-3 text-amber-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <span>Rua Antonio Jose Saraiva, Nº 226, Seu Santo Agostinho<br>Manaus - AM, 69036-535</span>
+                    </p>
+                    <a href="https://wa.me/5592991707869" target="_blank" class="mb-4 flex items-center text-gray-700 hover:text-blue-800 transition duration-300">
+                            <svg class="w-6 h-6 mr-3 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                            </svg>
+                            <span>WhatsApp: (92) 99170-7869</span>
+                        </a>
+                    <p class="mb-4 flex items-center">
+                        <svg class="w-6 h-6 mr-3 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        <span>email@vbmaterial.com</span>
+                    </p>
+                    <div class="mt-8">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d590.7251367908907!2d-60.06811910945644!3d-3.097214781562472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c102dc705adc9%3A0x77b44907f6e45c17!2sV.B%20Materiais%20de%20Constru%C3%A7%C3%A3o!5e1!3m2!1spt-BR!2sus!4v1758654548846!5m2!1spt-BR!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                </div>
+               <div>
+    <h3 class="text-2xl font-bold text-blue-900 mb-6">Mande uma Mensagem</h3>
+    <form id="contact-form"> 
+        <div class="mb-4">
+            <label for="name" class="block text-gray-700 font-medium mb-2">Nome</label>
+            <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400" required>
+        </div>
+        <div class="mb-4">
+            <label for="email" class="block text-gray-700 font-medium mb-2">Email ou Telefone</label>
+            <input type="text" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400" required>
+        </div>
+        <div class="mb-6">
+            <label for="message" class="block text-gray-700 font-medium mb-2">Mensagem</label>
+            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400" required></textarea>
+        </div>
+        <button type="submit" class="w-full bg-amber-400 text-blue-900 font-bold py-4 px-8 rounded-lg shadow-md hover:bg-amber-500 transition duration-300 transform hover:scale-105">
+            Enviar Orçamento
+        </button>
+        <p id="form-status" class="text-center mt-4"></p>
+    </form>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="font-montserrat font-bold text-xl mb-2">VB Materiais de Construção</p>
+            <p>&copy; 2025 - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const categoryLinks = document.querySelectorAll('.category-link');
+            const productPages = document.querySelectorAll('.product-page');
+            const mainContent = document.getElementById('main-content');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            const showMainContent = () => {
+                mainContent.classList.remove('hidden');
+                document.getElementById('product-pages-container').style.display = 'none';
+                
+                const hash = window.location.hash;
+                if (!hash || hash === '#inicio' || hash === '') {
+                     window.scrollTo(0, 0);
+                }
+            };
+
+            const showProductPage = (pageId) => {
+                mainContent.classList.add('hidden');
+                document.getElementById('product-pages-container').style.display = 'block';
+                productPages.forEach(page => page.classList.add('hidden'));
+
+                const targetPage = document.querySelector(pageId);
+                if (targetPage) {
+                    targetPage.classList.remove('hidden');
+                }
+                window.scrollTo(0, 0);
+            };
+
+            categoryLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    const targetId = link.getAttribute('href');
+                    showProductPage(targetId);
+                });
+            });
+
+            document.body.addEventListener('click', function(event) {
+                if (event.target.matches('.back-button')) {
+                    showMainContent();
+                    window.location.hash = '#categorias';
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    const targetId = link.getAttribute('href');
+                    if (targetId.startsWith('#pagina-')) {
+                        event.preventDefault();
+                        showProductPage(targetId);
+                    } else {
+                        showMainContent();
+                    }
+                    if (!mobileMenu.classList.contains('hidden')) {
+                         mobileMenu.classList.add('hidden');
+                    }
+                });
+            });
+
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            
+            const swiper = new Swiper('.hero-swiper', {
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+
+            document.getElementById('product-pages-container').style.display = 'none';
+        });
+    </script>
+    <script>
+        const contactForm = document.getElementById('contact-form');
+        const formStatus = document.getElementById('form-status');
+
+        contactForm.addEventListener('submit', async (event) => {
+            event.preventDefault(); 
+
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            submitButton.disabled = true; 
+            submitButton.textContent = 'Enviando...';
+            formStatus.textContent = ''; 
+
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                message: document.getElementById('message').value
+            };
+
+            try {
+                const response = await fetch('http://localhost:5000/api/contact/send', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    formStatus.textContent = '✅ Mensagem enviada com sucesso! Entraremos em contato em breve.';
+                    formStatus.style.color = 'green';
+                    contactForm.reset(); 
+                } else {
+                    formStatus.textContent = `❌ Erro: ${result.error || 'Não foi possível enviar a mensagem.'}`;
+                    formStatus.style.color = 'red';
+                }
+
+            } catch (error) {
+                console.error('Erro de conexão:', error);
+                formStatus.textContent = '❌ Erro de conexão. Verifique sua internet e tente novamente.';
+                formStatus.style.color = 'red';
+            } finally {
+                submitButton.disabled = false; 
+                submitButton.textContent = 'Enviar Orçamento';
+            }
+        });
+    </script>
+</body>
+</html>
