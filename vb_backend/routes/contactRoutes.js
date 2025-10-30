@@ -28,10 +28,10 @@ router.post('/send', async (req, res) => {
 
 router.get('/messages', async (req, res) => {
     try {
-        // Busca todas as mensagens e ordena da mais nova para a mais antiga
+       
         const messages = await Message.find().sort({ createdAt: -1 });
 
-        res.status(200).json(messages); // Envia as mensagens como resposta JSON
+        res.status(200).json(messages); 
 
     } catch (error) {
         console.error('Erro ao buscar mensagens:', error);

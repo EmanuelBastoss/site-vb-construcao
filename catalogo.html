@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Produtos - VB Materiais de Construção</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6, .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+     
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex-grow: 1;
+        }
+        .product-price {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #1e3a8a;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+  
+    <header class="bg-white shadow-md sticky w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html"><img src="/Logotipo sem fundo.png" alt="Logo VB Construção" class="h-10" onerror="this.onerror=null; this.src='https://placehold.co/150x40/022c5c/FFFFFF?text=VB+Logo';"></a>
+            
+            <div class="hidden lg:flex items-center space-x-6">
+                <a href="index.html#inicio" class="text-gray-700 hover:text-blue-800 font-medium transition duration-300">Início</a>
+                <a href="index.html#categorias" class="text-gray-700 hover:text-blue-800 font-medium transition duration-300">Categorias</a>
+                <a href="index.html#diferenciais" class="text-gray-700 hover:text-blue-800 font-medium transition duration-300">Diferenciais</a>
+                <a href="index.html#contato" class="text-gray-700 hover:text-blue-800 font-medium transition duration-300">Contato</a>
+                
+                <a href="dashboard.html" class="text-blue-800 hover:text-amber-500 font-bold transition duration-300">Dashboard</a>
+            </div>
+            
+            <a href="index.html#contato" class="hidden lg:block bg-amber-400 text-blue-900 font-bold py-2 px-5 rounded-lg shadow-md hover:bg-amber-500 transition duration-300">
+                Fale Conosco
+            </a>
+            
+            <button id="mobile-menu-button" class="lg:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+    
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t">
+            <a href="index.html#inicio" class="block text-gray-700 py-2 px-6 hover:bg-gray-100">Início</a>
+            <a href="index.html#categorias" class="block text-gray-700 py-2 px-6 hover:bg-gray-100">Categorias</a>
+            <a href="index.html#diferenciais" class="block text-gray-700 py-2 px-6 hover:bg-gray-100">Diferenciais</a>
+            <a href="index.html#contato" class="block text-gray-700 py-2 px-6 hover:bg-gray-100">Contato</a>
+            <a href="dashboard.html" class="block text-blue-800 py-2 px-6 hover:bg-gray-100 font-bold">Dashboard</a>
+        </div>
+    </header>
+
+    
+    <main class="container mx-auto px-6 py-12">
+
+        <section id="catalogo-produtos">
+            <h2 id="category-title" class="text-3xl font-bold text-blue-900 mb-8 text-center">Carregando Catálogo...</h2>
+
+            <div id="category-container">
+                <div class="product-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    </div>
+                <p class="empty-message text-center text-gray-500 hidden mt-8">Nenhum produto cadastrado nesta categoria.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="bg-blue-900 text-white py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="font-montserrat font-bold text-xl mb-2">VB Materiais de Construção</p>
+            <p>&copy; 2025 - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            
+            const API_URL = 'http://localhost:5000'; 
+
+            const productGrid = document.querySelector('.product-grid');
+            const emptyMessage = document.querySelector('.empty-message');
+            const categoryTitle = document.getElementById('category-title');
+
+        
+            function formatPrice(price) {
+                if (typeof price !== 'number') {
+                    price = 0;
+                }
+                return price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+            }
+
+           
+            function createProductCard(product) {
+            
+                const imageURL = `${API_URL}${product.photoURL}`;
+                
+                return `
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transition duration-300 hover:shadow-2xl">
+                        <img src="${imageURL}" alt="${product.name}" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/400x300/e0e0e0/999999?text=Sem+Foto';">
+                        <div class="p-5 flex flex-col flex-grow">
+                            <h4 class="text-xl font-bold text-blue-900 mb-2">${product.name}</h4>
+                            <p class="text-gray-600 text-sm flex-grow mb-4">${product.description}</p>
+                            <p class="product-price text-2xl mt-auto">${formatPrice(product.price)}</Lp>
+                        </div>
+                    </div>
+                `;
+            }
+
+    
+            async function fetchProducts() {
+             
+                productGrid.innerHTML = '';
+                emptyMessage.classList.add('hidden');
+
+                
+                const params = new URLSearchParams(window.location.search);
+                const categoryName = params.get('cat');
+
+                if (!categoryName) {
+                    categoryTitle.textContent = 'Categoria não encontrada';
+                    emptyMessage.textContent = 'Por favor, selecione uma categoria na página inicial.';
+                    emptyMessage.classList.remove('hidden');
+                    return;
+                }
+
+               
+                categoryTitle.textContent = `Catálogo - ${categoryName}`;
+                document.title = `Catálogo - ${categoryName} | VB Materiais`;
+
+                try {
+                    
+                    const response = await fetch(`${API_URL}/api/products?cat=${encodeURIComponent(categoryName)}`);
+                    if (!response.ok) {
+                        throw new Error('Falha ao buscar produtos.');
+                    }
+                    
+                    const products = await response.json();
+
+                    if (products.length === 0) {
+                         
+                         emptyMessage.classList.remove('hidden');
+                         return;
+                    }
+                    
+                   
+                    products.forEach(product => {
+                        productGrid.innerHTML += createProductCard(product);
+                    });
+
+                } catch (error) {
+                    console.error('Erro ao buscar produtos:', error);
+                    categoryTitle.textContent = 'Erro ao carregar catálogo';
+                    emptyMessage.textContent = 'Não foi possível carregar os produtos. Tente atualizar a página.';
+                    emptyMessage.classList.remove('hidden');
+                }
+            }
+
+           
+            fetchProducts(); 
+
+        });
+    </script>
+
+</body>
+</html>

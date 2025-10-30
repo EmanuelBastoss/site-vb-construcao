@@ -1,0 +1,9 @@
+
+node_modules
+vb_backend/node_modules
+
+
+.env
+vb_backend/.env
+
+
